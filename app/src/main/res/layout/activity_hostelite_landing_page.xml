@@ -150,33 +150,128 @@
 
     </LinearLayout>
 
+    //recycler
+
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@+id/searchBarLayout"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/searchBarLayout">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_hostels_lp"
-        android:layout_width="match_parent"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hostels_lp"
+            android:layout_width="match_parent"
 
-        android:layout_height="wrap_content">
+            android:layout_height="wrap_content">
 
 
-    </androidx.recyclerview.widget.RecyclerView>
+        </androidx.recyclerview.widget.RecyclerView>
 
-    </LinearLayout>
-
+        </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/navigationbar_bg">
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/navigationbar_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:weightSum="5.5"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.legacy.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:layout_width="@dimen/btn_icn_size"
+                    android:layout_height="@dimen/btn_icn_size"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_search" />
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:layout_width="@dimen/btn_icn_size"
+                    android:layout_height="@dimen/btn_icn_size"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_schedule" />
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:layout_width="@dimen/btn_icn_size"
+                    android:layout_height="@dimen/btn_icn_size"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_person" />
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:layout_width="@dimen/btn_icn_size"
+                    android:layout_height="@dimen/btn_icn_size"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_favourite" />
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:layout_width="@dimen/btn_icn_size"
+                    android:layout_height="@dimen/btn_icn_size"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_contact" />
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
