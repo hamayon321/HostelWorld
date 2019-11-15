@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,8 +9,9 @@
 
 
     //topBar
-
     <LinearLayout
+
+        android:id="@+id/topBar_landingP"
         android:background="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,6 +43,140 @@
     </LinearLayout>
 
 
+    //search
+    <LinearLayout
+        android:id="@+id/searchBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+
+        android:gravity="center_vertical"
+        android:background="#F3F3F3"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:weightSum="1"
+        app:layout_constraintTop_toBottomOf="@+id/topBar_landingP">
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.05"/>
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:elevation="@dimen/_5sdp"
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="@dimen/_30sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Search : "
+                    android:textColor="@color/colorApp"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/et_search_landingP"
+                    android:layout_width="fill_parent"
+                    android:gravity="bottom"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/_13sdp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:backgroundTint="@android:color/white"
+                    android:fontFamily="sans-serif-condensed-light" />
+
+            </LinearLayout>
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.05"/>
+
+        //searchButton
+        <LinearLayout
+            android:layout_width="@dimen/mainP_btn_bg_size"
+            android:layout_height="@dimen/mainP_btn_bg_size"
+            android:gravity="center"
+            android:background="@drawable/circle_button">
+        <Button
+            android:layout_width="@dimen/btn_icn_size"
+            android:layout_height="@dimen/btn_icn_size"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_search"/>
+        </LinearLayout>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.05"/>
+
+        //filterButton
+        <LinearLayout
+            android:layout_width="@dimen/mainP_btn_bg_size"
+            android:layout_height="@dimen/mainP_btn_bg_size"
+            android:gravity="center"
+            android:background="@drawable/circle_button">
+            <Button
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_width="@dimen/btn_icn_size"
+                android:layout_height="@dimen/btn_icn_size"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_filter"/>
+        </LinearLayout>
+
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.05"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/searchBarLayout"
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_hostels_lp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/navigationbar_bg">
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
