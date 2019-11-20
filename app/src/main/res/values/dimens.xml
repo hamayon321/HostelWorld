@@ -9,6 +9,7 @@
     <dimen name="cv_mainHeading">@dimen/_14sdp</dimen>
     <dimen name="imgBack_height">@dimen/_25sdp</dimen>
     <dimen name="cv_textSmall_size">@dimen/_12sdp</dimen>
+    <dimen name="cv_textExtraSmall_size">@dimen/_9sdp</dimen>
 
 
 </resources>

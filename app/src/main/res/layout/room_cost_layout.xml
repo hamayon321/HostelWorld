@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/cv_MainHeadingmarginLeft"
+        android:layout_marginLeft="@dimen/_20sdp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/roomName_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/cv_textSmall_size"
+                android:text="Single Person"/>
+
+                <TextView
+                    android:id="@+id/roomBath_layout"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/cv_textExtraSmall_size"
+                    android:text="Single Person"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/roomCost_layout"
+                android:textSize="@dimen/cv_textSmall_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. XXXX"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
