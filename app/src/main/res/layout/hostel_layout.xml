@@ -38,9 +38,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hostel Name"
-            android:textSize="@dimen/_20sdp"
+            android:textSize="@dimen/cv_mainHeading"
             android:textColor="@color/colorDarkGrey"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="@string/cvMainHeading_font"
             />
 
        <ImageView

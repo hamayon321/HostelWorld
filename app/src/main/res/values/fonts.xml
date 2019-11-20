@@ -2,6 +2,7 @@
 <resources>
 
     <string name="topBar_font">sans-serif-condensed-medium</string>
+    <string name="cvMainHeading_font">sans-serif-medium</string>
 
 
 </resources>

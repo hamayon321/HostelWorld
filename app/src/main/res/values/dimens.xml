@@ -5,6 +5,8 @@
     <dimen name="mainP_btn_bg_size">@dimen/_30sdp</dimen>
     <dimen name="btn_icn_size">@dimen/_18sdp</dimen>
     <dimen name="cv_marginLeft">@dimen/_5sdp</dimen>
+    <dimen name="cv_MainHeadingmarginLeft">@dimen/_10sdp</dimen>
+    <dimen name="cv_mainHeading">@dimen/_20sdp</dimen>
     <dimen name="imgBack_height">@dimen/_25sdp</dimen>
     <dimen name="cv_textSmall_size">@dimen/_14sdp</dimen>
 
